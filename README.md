@@ -2,7 +2,7 @@
 # Food-11 Image Classification with ResNet50 & Recipe Suggestion System
 
 This repository contains a complete end-to-end machine learning project for **food image classification** using the **Food-11 dataset** and **transfer learning with ResNet50**.  
-All steps of the project — from data loading to model training, evaluation, visualization, and recipe recommendations — are implemented inside **one single notebook**, making the project easy to run and review.
+All steps of the project from data loading to model training, evaluation, visualization, and recipe recommendations are implemented inside **one single notebook**, making the project easy to run and review.
 
 
 ## Project Overview
