@@ -1,12 +1,11 @@
 # ML_food-recognition
-# 🍽️ Food-11 Image Classification with ResNet50 & Recipe Suggestion System
+# Food-11 Image Classification with ResNet50 & Recipe Suggestion System
 
 This repository contains a complete end-to-end machine learning project for **food image classification** using the **Food-11 dataset** and **transfer learning with ResNet50**.  
 All steps of the project — from data loading to model training, evaluation, visualization, and recipe recommendations — are implemented inside **one single notebook**, making the project easy to run and review.
 
----
 
-## 📌 Project Overview
+## Project Overview
 
 The goal of this project is to build a deep learning model capable of classifying images into **11 different food categories** using the Food-11 dataset.  
 The project also includes a simple **recipe suggestion module** that recommends recipes based on the predicted food class.
@@ -26,31 +25,27 @@ The notebook performs:
 
 Everything is coded inside **one notebook file**.
 
----
-
-## 📁 File Included
+## File Included
 
 
 There are **no additional folders**, as the full implementation is consolidated in a single notebook.
 
----
 
-## 🍱 Dataset
+## Dataset
 
 This project uses the **Food-11 dataset**, which contains 16,643 images across 11 food categories.
 
 The dataset must be manually downloaded from:
 
-🔗 https://data.vision.ee.ethz.ch/cvl/food-11/
+https://www.kaggle.com/datasets/vermaavi/food11
 
 Then placed in your Google Drive under:
 
 
 The notebook automatically unzips the file and organizes directories.
 
----
 
-## 🧠 Model Architecture (ResNet50)
+## Model Architecture (ResNet50)
 
 The project uses **ResNet50 pretrained on ImageNet** (`include_top=False`).
 
@@ -66,9 +61,8 @@ Key components:
 - Optimizer: Adam  
 - Loss: categorical crossentropy  
 
----
 
-## ⚙️ Training Procedure
+## Training Procedure
 
 The training consists of two stages:
 
@@ -84,9 +78,8 @@ Callbacks used:
 - `EarlyStopping`  
 - `ReduceLROnPlateau`  
 
----
 
-## 📈 Evaluation
+## Evaluation
 
 The notebook generates:
 
@@ -100,11 +93,9 @@ The notebook generates:
 Achieved performance (example):
 
 - **Test accuracy:** ~0.91  
-- **Test loss:** ~0.28  
+- **Test loss:** ~0.28
 
----
-
-## 🥘 Recipe Suggestion Module
+## Recipe Suggestion Module
 
 A simple Python dictionary (`RECIPE_DB`) maps each food class ID to a list of recipe objects.  
 Based on the predicted class, the function:
